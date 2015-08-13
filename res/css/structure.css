@@ -5,6 +5,7 @@ html, body {
 body{
   padding: 0px;
   margin: 0px;
+  color: red;
 }
 
 /************
@@ -20,6 +21,7 @@ body{
   z-index: 1;
 }
 
+/*
 .cover img{
   position: absolute;
   width: 100%;
@@ -27,6 +29,7 @@ body{
   top: 0px;
   z-index: 5;
 }
+*/
 
 .cover .tinted{
   position: absolute;
@@ -43,54 +46,69 @@ body{
   z-index: 7;
 }
 
+.decor{
+  width: 100px !important;
+}
+
 /************
   MENU
 *************/
 .header{
   position: fixed;
-  background: rgba(255, 255, 255, 1);
-  box-shadow: 0px 0px 2px #323232;
+  background: rgba(255, 255, 255, 0.9);
+  /*background-image: url('./img/photos.bg');*/
+  /*box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4);*/
+  border-bottom: 1px solid #e3e3e3;
   width: 100%;
-  height: 0px;
+  height: 80px;
   z-index: 10;
   top: 0px;
 }
 
 .logo{
-  display: inline-block;
+  display: table;
+  background: #b9812b;
   position: absolute;
-  left: 40px;
-  height: 35px;
+  left: 0px;
+  height: 100%;
   width: 200px;
-  margin: 5px 0px 5px 0px;
-  padding: 0px !important;
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px !important;
 }
 
-.logo img{
-  height: 100%;
+.logo-item{
+  display: table-cell;
+  vertical-align: middle;
+  width: 50%
+}
+
+.logo-item img{
+  height: 35px;
 }
 
 .menu{
-  display: inline-block;
+  display: table;
   position: absolute;
   right: 40px;
-  height: 40px;
-  margin: 5px 0px 5px 0px;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
   -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
   -moz-box-sizing: border-box;    /* Firefox, other Gecko */
   box-sizing: border-box;
+  font-weight: 300;
 }
 
 .menu ul{
   padding: 0px;
-  margin-top: 7px;
+  margin-top: 0px;
 }
 
 .menu li{
   list-style-type: none;
   display: inline-block;
   padding: 0px;
-  margin: 0px 5px 0px 0px;
+  margin: 0px;
   font-size: 15px;
 }
 
@@ -103,6 +121,18 @@ body{
   color: #C2C2C2;
 }
 
+.m-item{
+  display: table-cell;
+  color: #b9812b;
+  font-size: 18px;
+  vertical-align: middle;
+  padding: 0px 15px 0px 15px;
+}
+
+.m-item:hover{
+  background: #b9812b;
+  color: white;
+}
 
 /************
   ROWS
@@ -151,4 +181,17 @@ body{
 
 .mar-50{
   margin: 50px;
+}
+
+/************
+  SHAPES
+*************/
+
+#parallelogram {
+	width: 150px;
+	height: 100px;
+	-webkit-transform: skew(20deg);
+	   -moz-transform: skew(20deg);
+	     -o-transform: skew(20deg);
+	background: red;
 }

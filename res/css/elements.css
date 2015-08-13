@@ -3,8 +3,8 @@
 *************/
 
 .ghost-light{
-  background: none;
-  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 0px;
   border: 1px solid white;
   color: white;
   font-size: 15px;
@@ -12,13 +12,13 @@
 }
 
 .ghost-light:hover{
-  background: white;
-  color: black;
+  background: rgba(255, 255, 255, 0.9);
+  color: gray;
 }
 
 .ghost-light:focus{
   background: white;
-  color: black;
+  color: gray;
 }
 
 .ghost-light:active{
@@ -50,20 +50,20 @@
 
 .ghost-color{
   background: none;
-  border-radius: 5px;
-  border: 1px solid #2AE877;
-  color: #2AE877;
+  border-radius: 0px;
+  border: 1px solid #B9812B;
+  color: #B9812B;
   font-size: 15px;
   padding: 5px;
 }
 
 .ghost-color:hover{
-  background: #2AE877;
+  background: #B9812B;
   color: white;
 }
 
 .ghost-color:focus{
-  background: #2AE877;
+  background: #B9812B;
   color: white;
 }
 
@@ -143,4 +143,21 @@
   -webkit-filter: grayscale(0%);
   filter: grayscale(0%);
   opacity: 1;
+}
+
+/************
+  FORM
+*************/
+
+.txt-field{
+  width: 80%;
+  border: 1px solid #B4B4B4;
+  border-radius: 5px;
+  padding: 5px;
+  outline: none;
+  font-size: 15px;
+}
+
+.txt-field:focus{
+  border-color: #D5A04F;
 }
