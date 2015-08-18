@@ -5,7 +5,6 @@ html, body {
 body{
   padding: 0px;
   margin: 0px;
-  color: red;
 }
 
 /************
@@ -50,12 +49,21 @@ body{
   width: 100px !important;
 }
 
+.cover-section{
+  position: relative;
+  width: 100%;
+  height: 230px;
+  overflow: hidden;
+  top: 0px;
+  z-index: 1;
+}
+
 /************
   MENU
 *************/
 .header{
   position: fixed;
-  background: rgba(50, 50, 50, 0.95);
+  background: rgba(35, 35, 35, 0.95);
   /*background-image: url('./img/photos.bg');*/
   box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.4);
   width: 100%;
@@ -113,11 +121,11 @@ body{
 
 .menu a:link{
   text-decoration: none;
-  color: #C2C2C2;
+  color: #fff;
 }
 
 .menu a:visited{
-  color: #C2C2C2;
+  color: #fff;
 }
 
 .m-item{
@@ -193,4 +201,29 @@ body{
 	   -moz-transform: skew(20deg);
 	     -o-transform: skew(20deg);
 	background: red;
+}
+
+/************
+  MOSAIQ
+*************/
+
+.mosaiq{
+  position: relative;
+  display: table;
+  width: 100%;
+  background: whitesmoke;
+}
+
+.tide{
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  width: 30%;
+  height: 190px;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.tide-content{
+  font-size: 16px;
 }

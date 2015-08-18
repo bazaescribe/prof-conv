@@ -3,7 +3,7 @@
 *************/
 
 .ghost-light{
-  background: rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0);
   border-radius: 0px;
   border: 1px solid white;
   color: white;
@@ -129,9 +129,9 @@
 *************/
 
 .allies{
-  max-height: 70px;
+  max-height: 100px;
   -webkit-filter: grayscale(100%);
-  filter: grayscale(100%);
+  filter: grayscale(10%);
   opacity: 0.3;
 }
 
