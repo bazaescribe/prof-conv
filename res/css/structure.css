@@ -52,7 +52,7 @@ body{
 .cover-section{
   position: relative;
   width: 100%;
-  height: 230px;
+  height: 70%;
   overflow: hidden;
   top: 0px;
   z-index: 1;
@@ -219,11 +219,11 @@ body{
   text-align: center;
   vertical-align: middle;
   width: 30%;
-  height: 190px;
+  height: 220px;
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
 
 .tide-content{
-  font-size: 16px;
+  font-size: 18px;
 }

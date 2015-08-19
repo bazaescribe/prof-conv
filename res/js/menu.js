@@ -2,7 +2,7 @@ function scrollChange(){
   var yPos = window.scrollY;
 
   if(yPos > 100){
-      $("#menuBar").animate({ height:'50'}, 300);
+      $("#menuBar").animate({ height:'50'}, 150);
   }
 }
 
