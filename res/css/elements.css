@@ -187,3 +187,44 @@
 .txt-field:focus{
   border-color: #D5A04F;
 }
+
+/************
+  EVENT
+*************/
+
+.event{
+  border: 1px solid #B4B4B4;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 0px 10px 0px 0px;
+  width: 200px;
+  text-align: left;
+}
+
+.event .title{
+  color: #6E6E6E;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.event .date{
+  color: #a3a3a3;
+}
+
+.event .site{
+  color: #a3a3a3;
+}
+
+.event .price{
+  margin-top: 15px;
+  color: #B9812B;
+  font-size: 20px;
+}
+
+/************
+  FORM
+*************/
+
+.highlighter{
+  color: yellowgreen;
+}
