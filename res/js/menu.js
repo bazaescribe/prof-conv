@@ -1,9 +1,29 @@
 function scrollChange(){
-  var yPos = window.scrollY;
+  var distanceY = window.scrollY;
+  var shrinkOn = 100;
+  var header = document.getElementById('menuBar');
+  var headerSize = $("#menuBar").height();
+
+  if (distanceY > shrinkOn) {
+    $("#menuBar").animate({ height:'50'}, 50);
+  } else {
+    if (headerSize < 51) {
+      $("#menuBar").animate({ height:'80'}, 50);
+    }
+  }
+  /*
+  var sizeMenu = $("#menuBar").height();
 
   if(yPos > 100){
       $("#menuBar").animate({ height:'50'}, 150);
+  }else {
+    if(yPos < 100){
+        if(sizeMenu == 50){
+          $("#menuBar").animate({ height:'80'}, 150);
+        }
+    }
   }
+  */
 }
 
 function scrollMenu(){
@@ -42,6 +62,8 @@ function chText(option){
           text = '<div class="wow fadeInRight"><span class="light" style="font-size:50px; font-weight: 400;">Lorem impsum dolor <br>dolor et sit ammet.</span><br></div><br><div class="wow fadeIn"><img src="res/img/graph/adorno.png" alt="" /></div>';
         }else {
           if (option == 5) {
+            text = '<div class="wow fadeInRight"><span class="light" style="font-size:50px; font-weight: 400;">Lorem impsum dolor <br>dolor et sit ammet.</span><br></div><br><div class="wow fadeIn"><img src="res/img/graph/adorno.png" alt="" /></div>';
+          }else{
             text = '<div class="wow fadeInRight"><span class="light" style="font-size:50px; font-weight: 400;">Lorem impsum dolor <br>dolor et sit ammet.</span><br></div><br><div class="wow fadeIn"><img src="res/img/graph/adorno.png" alt="" /></div>';
           }
         }
