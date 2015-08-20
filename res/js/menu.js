@@ -5,10 +5,10 @@ function scrollChange(){
   var headerSize = $("#menuBar").height();
 
   if (distanceY > shrinkOn) {
-    $("#menuBar").animate({ height:'50'}, 50);
+    $("#menuBar").animate({ height:'50'}, 0);
   } else {
     if (headerSize < 51) {
-      $("#menuBar").animate({ height:'80'}, 50);
+      $("#menuBar").animate({ height:'80'}, 0);
     }
   }
   /*
