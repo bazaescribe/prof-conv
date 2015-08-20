@@ -318,4 +318,8 @@ body{
       right: 0px;
       left: auto;
     }
+
+    .cover-section{
+      height: 90%;
+    }
 }
