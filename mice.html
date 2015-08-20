@@ -27,7 +27,45 @@
 
   <body onscroll="scrollChange()">
 
+    <div class="blind" style="display: none;" id="blind" onclick="showMenu(1)"></div>
+
+    <div class="side-menu" id="side-menu">
+      <ul>
+        <a href="home.html">
+          <li>Inicio</li>
+        </a>
+        <a href="nosotros.html">
+          <li>¿Quiénes somos?</li>
+        </a>
+        <a href="servicios.html">
+          <li>Servicios</li>
+        </a>
+        <a href="mice.html">
+          <li>MICE</li>
+        </a>
+        <a href="produccion.html">
+          <li>Producción y creatividad</li>
+        </a>
+        <a href="travel.html">
+          <li>Luxury Travel</li>
+        </a>
+        <a href="sports.html">
+          <li>Deportes y entretenimiento</li>
+        </a>
+      </ul>
+    </div>
+
     <div class="header center" style="font-size: 20px;" id="menuBar">
+      <div class="burger" id="burger-btn" onclick="showMenu(0)">
+        <div class="burger-button">
+          <i class="fa fa-bars fa-2x" id="burger-icon"></i>
+        </div>
+      </div>
+      <div class="burger" id="close-btn" onclick="showMenu(1)" style="display: none;">
+        <div class="burger-button">
+          <i class="fa fa-times fa-2x" id="close-icon"></i>
+        </div>
+      </div>
       <div class="logo">
         <div class="logo-item">
           <a href="home.html">
@@ -35,7 +73,7 @@
           </a>
         </div>
       </div>
-      <div class="menu">
+      <div class="menu" id="main-menu">
         <span class="m-item">
           <a href="nosotros.html">
             ¿Quiénes somos?

@@ -11,35 +11,6 @@ function scrollChange(){
       $("#menuBar").animate({ height:'80'}, 0);
     }
   }
-  /*
-  var sizeMenu = $("#menuBar").height();
-
-  if(yPos > 100){
-      $("#menuBar").animate({ height:'50'}, 150);
-  }else {
-    if(yPos < 100){
-        if(sizeMenu == 50){
-          $("#menuBar").animate({ height:'80'}, 150);
-        }
-    }
-  }
-  */
-}
-
-function scrollMenu(){
-  var doc = document.documentElement;
-  var top = (window.pageYOffset || doc.scrollTop)  - (doc.clientTop || 0);
-  var breakpoint = 100;
-
-  console.log(top);
-
-  if(top >= breakpoint){ //Cuando baja
-    $("#menuBar").animate({ height:'50'}, 600);
-    //console.log("Baja");
-  }else{ //Cuando sube
-    $("#menuBar").animate({ height:'80'}, 600);
-    //console.log("Sube");
-  }
 }
 
 //$(menu).animate({left: "-=300px"}, 300);
@@ -73,4 +44,21 @@ function chText(option){
   //console.log(option);
 
   cubo.innerHTML = text;
+}
+
+function showMenu(value){
+  var active = value;
+
+  if (active == 0) {
+    $("#side-menu").animate({ left:'0'}, 400);
+    document.getElementById('burger-btn').style.display = "none";
+    document.getElementById('close-btn').style.display = "";
+    document.getElementById('blind').style.display = "";
+  }else {
+    $("#side-menu").animate({ left:'-400px'}, 400);
+    document.getElementById('burger-btn').style.display = "";
+    document.getElementById('close-btn').style.display = "none";
+    document.getElementById('blind').style.display = "none";
+  }
+  //$("#side-menu").animate({ left:'0'}, 400);
 }

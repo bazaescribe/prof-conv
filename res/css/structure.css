@@ -85,8 +85,61 @@ body{
     transition: height 0.3s;
 }
 
-.header .smaller {
-    height: 75px;
+.blind{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 6;
+}
+
+.side-menu{
+  position: fixed;
+  left: -400px;
+  width: 350px;
+  height: 100%;
+  background: white;
+  box-shadow: 3px 0px 4px rgba(0, 0, 0, 0.4);
+  z-index: 7;
+}
+
+.side-menu ul{
+  margin-top: 100px;
+  list-style-type: none;
+  font-size: 18px;
+  color: #B9812B;
+}
+
+.side-menu li{
+  padding: 15px 0px 15px 10px;
+}
+
+.side-menu a:link{
+  color: #B9812B;
+  text-decoration: none;
+}
+
+.side-menu a:visited{
+  color: #B9812B;
+}
+
+.burger{
+  background: #B9812B;
+  color: white;
+  position: absolute;
+  left: 0px;
+  width: 100px;
+  height: 100%;
+  display: table;
+}
+
+.burger:hover{
+  opacity: 0.9;
+}
+
+.burger-button{
+  display: table-cell;
+  vertical-align: middle;
 }
 
 .logo{
@@ -133,7 +186,7 @@ body{
   display: inline-block;
   padding: 0px;
   margin: 0px;
-  font-size: 15px;
+  font-size: 10px;
 }
 
 .menu a:link{
@@ -148,7 +201,7 @@ body{
 .m-item{
   display: table-cell;
   color: #b9812b;
-  font-size: 18px;
+  font-size: 14px;
   vertical-align: middle;
   padding: 0px 15px 0px 15px;
 }
@@ -243,4 +296,26 @@ body{
 
 .tide-content{
   font-size: 18px;
+}
+
+
+/************
+  ------------MOBILE------------
+*************/
+
+@media screen and (max-width: 910px) {
+    #menuBar {
+    }
+
+    #main-menu{
+      background-color: purple;
+      display: none;
+    }
+
+    .logo{
+      background: none;
+      position: absolute;
+      right: 0px;
+      left: auto;
+    }
 }
