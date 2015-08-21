@@ -5,9 +5,9 @@ function scrollChange(){
   var headerSize = $("#menuBar").height();
 
   if (distanceY > shrinkOn) {
-    $("#menuBar").animate({ height:'50'}, 0);
+    $("#menuBar").animate({ height:'60'}, 0);
   } else {
-    if (headerSize < 51) {
+    if (headerSize < 61) {
       $("#menuBar").animate({ height:'80'}, 0);
     }
   }

@@ -66,6 +66,23 @@ body{
   vertical-align: middle;
 }
 
+.video-bg{
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  bottom: 0px;
+  height: 100%;
+  overflow: hidden;
+  min-width: 1000px;
+  z-index: -1;
+  background: black;
+}
+
+.video-bg video{
+    width: 100%;
+}
+
 /************
   MENU
 *************/
@@ -160,7 +177,7 @@ body{
 }
 
 .logo-item img{
-  height: 40px;
+  height: 48px;
 }
 
 .menu{
