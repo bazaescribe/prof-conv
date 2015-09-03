@@ -21,28 +21,31 @@ function chText(option){
   var text = "";
 
   if(option == 1){
-    text = '<div class="wow fadeInRight"><span class="light" style="font-size:50px; font-weight: 400;">Tenemos más de 35 años <br>de experiencia internaiconal.</span><br></div><br><div class="wow fadeIn"><img src="res/img/graph/adorno.png" alt="" /></div>';
+    text = '<div class="wow fadeInRight"><span class="light" style="font-size:50px; font-weight: 400;">Tenemos más de 35 años <br>de experiencia internacional</span><br></div><br><div class="wow fadeIn"><img src="res/img/graph/adorno.png" alt="" /></div>';
   }else{
     if (option == 2) {
-      text = '<div class="wow fadeInRight"><span class="light" style="font-size:50px; font-weight: 400;">Organizamos los mejores eventos <br>para satizfacer tus necesidades.</span><br></div><br><div class="wow fadeIn"><img src="res/img/graph/adorno.png" alt="" /></div>';
+      text = '<div class="wow fadeInRight"><span class="light" style="font-size:50px; font-weight: 400;">Organizamos los mejores eventos <br>para satizfacer tus necesidades</span><br></div><br><div class="wow fadeIn"><img src="res/img/graph/adorno.png" alt="" /></div>';
     }else {
       if (option == 3) {
-        text = '<div class="wow fadeInRight"><span class="light" style="font-size:50px; font-weight: 400;">Lorem impsum dolor <br>dolor et sit ammet.</span><br></div><br><div class="wow fadeIn"><img src="res/img/graph/adorno.png" alt="" /></div>';
+        text = '<div class="wow fadeInRight"><span class="light" style="font-size:50px; font-weight: 400;">Los mejores viajes <br>y eventos corporativos</span><br></div><br><div class="wow fadeIn"><img src="res/img/graph/adorno.png" alt="" /></div>';
       }else {
         if (option == 4) {
-          text = '<div class="wow fadeInRight"><span class="light" style="font-size:50px; font-weight: 400;">Lorem impsum dolor <br>dolor et sit ammet.</span><br></div><br><div class="wow fadeIn"><img src="res/img/graph/adorno.png" alt="" /></div>';
+          text = '<div class="wow fadeInRight"><span class="light" style="font-size:50px; font-weight: 400;">Desde el desarrollo del concepto <br/> hasta la ejecución</span><br></div><br><div class="wow fadeIn"><img src="res/img/graph/adorno.png" alt="" /></div>';
         }else {
           if (option == 5) {
-            text = '<div class="wow fadeInRight"><span class="light" style="font-size:50px; font-weight: 400;">Lorem impsum dolor <br>dolor et sit ammet.</span><br></div><br><div class="wow fadeIn"><img src="res/img/graph/adorno.png" alt="" /></div>';
+            text = '<div class="wow fadeInRight"><span class="light" style="font-size:50px; font-weight: 400;">Descubre una nueva y<br>diferente forma de viajar</span><br></div><br><div class="wow fadeIn"><img src="res/img/graph/adorno.png" alt="" /></div>';
           }else{
             if (option == 6) {
-              text = '<div class="wow fadeInRight"><span class="light" style="font-size:50px; font-weight: 400;">Lorem impsum dolor <br>dolor et sit ammet.</span><br></div><br><div class="wow fadeIn"><img src="res/img/graph/adorno.png" alt="" /></div>';
+              text = '<div class="wow fadeInRight"><span class="light" style="font-size:50px; font-weight: 400;">Contáctanos</span><br></div><br><div class="wow fadeIn"><img src="res/img/graph/adorno.png" alt="" /></div>';
             }else {
               if (option == 0) {
-                text = '<div class="wow fadeIn animation-one"><span class="light" style="font-size:50px; font-weight: 400;">Somos la mejor <br>opción para tu evento.</span><br></div><br><div class="wow fadeIn animation-one"><img src="res/img/graph/adorno.png" alt="" /></div><br><div class="wow fadeIn animation-one"><input type="button" name="name" value="Ver más" class="ghost-light" style="width: 200px;"></div>';
+                text = '<div class="wow fadeIn animation-one"><span class="light" style="font-size:50px; font-weight: 400;">Somos la mejor<br>opción para tu evento</span><br></div><br><div class="wow fadeIn animation-one"><img src="res/img/graph/adorno.png" alt="" /></div><br><div class="wow fadeIn animation-one"><input type="button" name="name" value="Ver más" class="ghost-light" style="width: 200px;"></div>';
+              }else{
+                if (option == 7) {
+                  text = '<div class="wow fadeIn animation-one"><span class="light" style="font-size:50px; font-weight: 400;">Visit our website <br>in your language</span><br></div><br><div class="wow fadeIn animation-one"><img src="res/img/graph/adorno.png" alt="" /></div><br><div class="wow fadeIn animation-one"><input type="button" name="name" value="Ver más" class="ghost-light" style="width: 200px;"></div>';
+                }
               }
             }
-
           }
         }
       }
@@ -68,4 +71,14 @@ function showMenu(value){
     document.getElementById('blind').style.display = "none";
   }
   //$("#side-menu").animate({ left:'0'}, 400);
+}
+
+function icons(value){
+  var icon = "icon"+value;
+  var desc = "desc"+value;
+
+  document.getElementById(icon).style.display = "none";
+  document.getElementById(desc).style.display = "";
+
+  console.log(icon + desc);
 }
