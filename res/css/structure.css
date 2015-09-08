@@ -356,6 +356,35 @@ label{
   color: white;
 }
 
+.fullpage{
+  display: table;
+  height: 100%;
+  width: 100%;
+  background-size: 100% auto;
+}
+
+.fp-content{
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.big-circle{
+  display: table;
+  width: 240px;
+  height: 240px;
+  border: 0px solid rgba(185, 129, 43, 0.8);
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.85);;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+.big-circle-txt{
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 30px;
+  color: #4a4a4a;
+}
+
 
 /************
   ------------MOBILE------------
