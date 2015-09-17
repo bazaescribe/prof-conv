@@ -74,7 +74,7 @@ body{
   bottom: 0px;
   height: 100%;
   overflow: hidden;
-  min-width: 1000px;
+  /*min-width: 1000px;*/
   z-index: -1;
   background: black;
 }
@@ -82,6 +82,17 @@ body{
 .video-bg video{
     width: 100%;
 }
+
+@media screen and (max-width: 1000px) {
+  .video-bg video{
+      display: none;
+  }
+
+  .video-bg{
+    background: #424242;
+  }
+}
+
 
 /************
   MENU
