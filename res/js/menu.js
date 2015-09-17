@@ -38,8 +38,8 @@ function chText(option){
             if (option == 6) {
               text = '<div class="wow fadeInRight"><span class="light" style="font-size:50px; font-weight: 400;">Contáctanos</span><br></div><br><div class="wow fadeIn"><img src="res/img/graph/adorno.png" alt="" /></div>';
             }else {
-              if (option == 0) {
-                text = '<div class="wow fadeIn animation-one"><span class="light" style="font-size:50px; font-weight: 400;">Somos la mejor<br>opción para tu evento</span><br></div><br><div class="wow fadeIn animation-one"><img src="res/img/graph/adorno.png" alt="" /></div><br><div class="wow fadeIn animation-one"><input type="button" name="name" value="Ver más" class="ghost-light" style="width: 200px;"></div>';
+              if (option === 0) {
+                text = '<div class="wow fadeIn animation-one"><span class="light" style="font-size:50px; font-weight: 400;">Somos la mejor<br>opción para tu evento</span><br></div><br><div class="wow fadeIn animation-one"><img src="res/img/graph/adorno.png" alt="" /></div><br><div class="center wow fadeIn animation-one"><a href="servicios.html"><div class="ghost-light" style="margin: 0 38% 0 38%;">Ver más</div></a></div>';
               }else{
                 if (option == 7) {
                   text = '<div class="wow fadeIn animation-one"><span class="light" style="font-size:50px; font-weight: 400;">Visit our website <br>in your language</span><br></div><br><div class="wow fadeIn animation-one"><img src="res/img/graph/adorno.png" alt="" /></div><br><div class="wow fadeIn animation-one"><input type="button" name="name" value="Ver más" class="ghost-light" style="width: 200px;"></div>';
@@ -59,7 +59,7 @@ function chText(option){
 function showMenu(value){
   var active = value;
 
-  if (active == 0) {
+  if (active === 0) {
     $("#side-menu").animate({ left:'0'}, 400);
     document.getElementById('burger-btn').style.display = "none";
     document.getElementById('close-btn').style.display = "";
