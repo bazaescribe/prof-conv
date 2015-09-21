@@ -141,18 +141,18 @@
 
     <div class="row pad-30 center reg-txt wow fadeIn">
       <div class="container center pad-50">
-        <form class="" action="index.html" method="post">
+        <form action="mail.php" method="POST">
             <label for="name">Nombre:</label>
             <input type="text" name="name" value="" id="name" class="txt-field">
             <br><br>
             <label for="company">Compañía:</label>
-            <input type="text" name="name" value="" id="company" class="txt-field">
+            <input type="text" name="company" value="" id="company" class="txt-field">
             <br><br>
             <label for="last-name">Correo electrónico</label>
-            <input type="text" name="name" value="" id="last-name" class="txt-field">
+            <input type="text" name="mail" value="" id="last-name" class="txt-field">
             <br><br>
             <label for="phone">Telefono</label>
-            <input type="text" name="name" value="" id="phone" class="txt-field">
+            <input type="text" name="phone" value="" id="phone" class="txt-field">
             <br><br>
             <label for="message">Mensaje</label>
             <textarea name="message" cols="40" rows="5" class="txt-box"></textarea>
@@ -164,7 +164,9 @@
               <option value="PUE">Puebla</option>
             </select>
             <br><br><br>
-            <input type="button" name="name" value="Enviar" class="ghost-color" style="width: 50%;">
+            <input type="submit" value="Enviar" class="ghost-color" style="width: 50%;">
+            <input type="reset" value="Clear">
+            <!--<input type="button" name="name" value="Enviar" class="ghost-color" style="width: 50%;">-->
         </form>
       </div>
       <br>
