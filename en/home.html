@@ -1,12 +1,11 @@
-</div><!DOCTYPE html>
-
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width" />
     <meta name="theme-color" content="#D5A04F">
 
-    <title>Contáctanos - Proconvenciones</title>
+    <title>Profesionales en Convenciones</title>
 
     <link rel="stylesheet" type="text/css" href="res/css/color.css">
     <link rel="stylesheet" type="text/css" href="res/css/text.css">
@@ -14,21 +13,21 @@
     <link rel="stylesheet" type="text/css" href="res/css/elements.css">
     <link rel="stylesheet" type="text/css" href="res/css/fotorama.css">
 
-    <link rel="stylesheet" type="text/css" href="res/css/animate.css">
-    <link rel="stylesheet" type="text/css" href="res/css/animconfig.css">
-    <link rel="stylesheet" href="res/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="../res/css/animate.css">
+    <link rel="stylesheet" type="text/css" href="../res/css/animconfig.css">
+    <link rel="stylesheet" href="../res/font-awesome/css/font-awesome.min.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 
-    <script type="text/javascript" src="res/js/parallax.js"></script>
-    <script type="text/javascript" src="res/js/wow.js"></script>
-    <script type="text/javascript" src="res/js/fotorama.js"></script>
+    <script type="text/javascript" src="../res/js/parallax.js"></script>
+    <script type="text/javascript" src="../res/js/wow.js"></script>
+    <script type="text/javascript" src="../res/js/fotorama.js"></script>
 
     <script type="text/javascript" src="res/js/menu.js"></script>
-    <script type="text/javascript" src="res/js/mosaiq.js"></script>
 
   </head>
 
+  <!--Hola a todos-->
   <body onscroll="scrollChange()">
 
     <div class="blind" style="display: none;" id="blind" onclick="showMenu(1)"></div>
@@ -36,25 +35,29 @@
     <div class="side-menu" id="side-menu">
       <ul>
         <a href="home.html">
-          <li>Inicio</li>
+          <li>Home</li>
         </a>
         <a href="nosotros.html">
-          <li>¿Quiénes Somos?</li>
+          <li>About us</li>
         </a>
         <a href="servicios.html">
-          <li>Servicios</li>
+          <li>Services</li>
         </a>
         <a href="mice.html">
           <li>MICE</li>
         </a>
         <a href="produccion.html">
-          <li>Producción y creatividad</li>
+          <li>Production & Creativity</li>
         </a>
         <a href="travel.html">
           <li>Luxury Travel</li>
         </a>
-        <a href="sports.html">
-          <li>Deportes y entretenimiento</li>
+
+        <a href="contact.html">
+          <li>Contact</li>
+        </a>
+        <a href="../home.html">
+          <li>SPANISH</li>
         </a>
       </ul>
     </div>
@@ -73,43 +76,52 @@
       <div class="logo">
         <div class="logo-item">
           <a href="home.html">
-            <img src="res/img/graph/logo.png" alt="" />
+            <img src="../res/img/graph/logo.png" alt="" />
           </a>
         </div>
       </div>
-      <div class="menu" id="main-menu">
-        <a href="nosotros.html" class="m-item">
-          ¿Quiénes Somos?
+
+      <div class="menu" id="main-menu" onmouseout="chText(0)">
+        <a href="nosotros.html" class="m-item" onmouseover="chText(1)">
+          About Us
         </a>
-        <a href="servicios.html" class="m-item">
-          Servicios
+        <a href="servicios.html" class="m-item" onmouseover="chText(2)">
+          Services
         </a>
-        <a href="mice.html" class="m-item">
+        <a href="mice.html" class="m-item" onmouseover="chText(3)">
           MICE
         </a>
-        <a href="produccion.html" class="m-item">
-          Producción y <br>
-          Creatividad
+        <a href="produccion.html" class="m-item" onmouseover="chText(4)">
+          Production & <br>
+          Creativity
         </a>
-        <a href="travel.html" class="m-item">
+        <a href="travel.html" class="m-item" onmouseover="chText(5)">
           Luxury Travel <br>
           Services
         </a>
-        <a href="contacto.html" class="m-item">
-          Contacto
+        <a href="contacto.html" class="m-item" onmouseover="chText(6)">
+          Contact
         </a>
-        <a href="en/home.html" class="m-item">
-          EN
+        <a href="../home.html" class="m-item" onmouseover="chText(7)">
+          SP
         </a>
       </div>
     </div>
 
-    <div class="cover-section" data-parallax="scroll" data-image-src="res/img/photos/wtc2.jpg">
+    <div class="video-bg" id="">
+      <video loop="loop" preload="auto" id="pretzel-video" class="video-playing" autoplay="true" muted="true">
+        <source src="../res/video/clip.mp4">
+        <source src="//a0.muscache.com/airbnb/static/Paris-P1-0.webm" type="video/webm">
+      </video>
+    </div>
 
-      <div class="section-title white-txt center" id="title-container">
+    <div class="cover" data-parallax="scroll" data-image-src="res/video/clipqw.gif" style="background: rgba(0, 0, 0, 0.4)">
+
+      <div class="section-title white-txt center" id="title-container" style="max-width: 100px;">
         <div class="wow fadeIn animation-one">
           <span class="light" style="font-size:50px; font-weight: 400;">
-            Contacto
+            We are the best choise <br>
+            for your event
           </span>
           <br>
         </div>
@@ -118,70 +130,15 @@
           <img src="res/img/graph/adorno.png" alt="" />
         </div>
         <br>
-        <div class="wow fadeIn animation-one">
-          <i class="fa fa-comments-o fa-5x"></i>
+        <div class="center wow fadeIn animation-one">
+          <a href="servicios.html">
+            <div class="ghost-light" style="margin: 0 38% 0 38%;">
+              More
+            </div>
+          </a>
         </div>
       </div>
-    </div>
 
-    <div class="row pad-30 center reg-txt wow fadeIn">
-      <h4 class="mar-30">Contáctanos</h4>
-
-      <div class="container justify">
-        ¿Le gustaría entrar en contacto directo con nosotros? ¿Requiere de mayor información? ¿Le gustaría envíarnos algún comentario?
-        <br><br>
-        Déjenos conocer sus solicitudes, estamos para servirle.
-        <br><br>
-        Envíenos un correo: Ciudad de México: mexico@proconvenciones.com
-        <br><br>
-        Llámenos: +52 (55) 9000 - 3400
-      </div>
-      <br>
-    </div>
-
-    <div class="row pad-30 center reg-txt wow fadeIn">
-      <div class="container center pad-50">
-        <form action="mail.php" method="POST">
-            <label for="name">Nombre:</label>
-            <input type="text" name="name" value="" id="name" class="txt-field">
-            <br><br>
-            <label for="company">Compañía:</label>
-            <input type="text" name="company" value="" id="company" class="txt-field">
-            <br><br>
-            <label for="last-name">Correo electrónico</label>
-            <input type="text" name="mail" value="" id="last-name" class="txt-field">
-            <br><br>
-            <label for="phone">Telefono</label>
-            <input type="text" name="phone" value="" id="phone" class="txt-field">
-            <br><br>
-            <label for="message">Mensaje</label>
-            <textarea name="message" cols="40" rows="5" class="txt-box"></textarea>
-            <br><br>
-            <label for="phone">Sucursal</label>
-            <select class="" name="" style="width: 300px;">
-              <option value="MEX">México</option>
-              <option value="MTY">Monterrey</option>
-              <option value="PUE">Puebla</option>
-            </select>
-            <br><br><br>
-            <input type="submit" value="Enviar" class="ghost-color" style="width: 50%;">
-            <input type="reset" value="Clear">
-            <!--<input type="button" name="name" value="Enviar" class="ghost-color" style="width: 50%;">-->
-        </form>
-      </div>
-      <br>
-    </div>
-
-    <div class="row">
-      <div class="third" data-parallax="scroll" data-image-src="res/img/photos/mex.jpg">
-        México
-      </div><!--
-      --><div class="third" data-parallax="scroll" data-image-src="res/img/photos/mty.jpg">
-        Monterrey
-      </div><!--
-      --><div class="third" data-parallax="scroll" data-image-src="res/img/photos/puebla.jpg">
-        Puebla
-      </div>
     </div>
 
     <div class="footer">
@@ -193,28 +150,28 @@
             <span class="FooterTitle">Secciones</span>
             <ul>
               <a href="home.html">
-                <li>Inicio</li>
+                <li>Home</li>
               </a>
               <a href="nosotros.html">
-                <li>¿Quiénes Somos?</li>
+                <li>About Us</li>
               </a>
               <a href="servicios.html">
-                <li>Servicios</li>
+                <li>Services</li>
               </a>
               <a href="mice.html">
                 <li>MICE</li>
               </a>
               <a href="produccion.html">
-                <li>Producción y Creatividad</li>
+                <li>Production and Creativity</li>
               </a>
               <a href="travel.html">
                 <li>Luxury Travel Services</li>
               </a>
               <a href="contacto.html">
-                <li>Contacto</li>
+                <li>Contact</li>
               </a>
               <a href="aviso.html">
-                <li>Aviso de Privacidad</li>
+                <li>Privacy (MX)</li>
               </a>
             </ul>
           </div>
@@ -268,9 +225,7 @@
 
       <!--Bot footer-->
       <div class="row neutral-40 white-txt pad-30 center">
-        © 2015 Profesionales en Convenciones, Todos los Derechos Reservados.
-        <br>
-        Empresa autorizada en el contrato Marco de la S.F.P. para Organización Integral de Eventos.
+        © 2015 Profesionales en Convenciones, All Rights Reserved.
         <br><br>
         <div class="cell">
           <a href="#" class="mar-10">
