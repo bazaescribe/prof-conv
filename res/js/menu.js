@@ -21,10 +21,10 @@ function chText(option){
   var text = "";
 
   if(option == 1){
-    text = '<div class="wow fadeInRight"><span class="light" style="font-size:50px; font-weight: 400;">Tenemos más de 35 años <br>de experiencia internacional</span><br></div><br><div class="wow fadeIn"><img src="res/img/graph/adorno.png" alt="" /></div>';
+    text = '<div class="wow fadeInRight"><span class="light" style="font-size:50px; font-weight: 400;">Contamos con más de 36 años <br>de experiencia</span><br></div><br><div class="wow fadeIn"><img src="res/img/graph/adorno.png" alt="" /></div>';
   }else{
     if (option == 2) {
-      text = '<div class="wow fadeInRight"><span class="light" style="font-size:50px; font-weight: 400;">Organizamos los mejores eventos <br>para satisfacer tus necesidades</span><br></div><br><div class="wow fadeIn"><img src="res/img/graph/adorno.png" alt="" /></div>';
+      text = '<div class="wow fadeInRight"><span class="light" style="font-size:50px; font-weight: 400;">Cuidamos cada detalle para la <br> realización de cualquier tipo de evento.</span><br></div><br><div class="wow fadeIn"><img src="res/img/graph/adorno.png" alt="" /></div>';
     }else {
       if (option == 3) {
         text = '<div class="wow fadeInRight"><span class="light" style="font-size:50px; font-weight: 400;">Los mejores viajes <br>y eventos corporativos</span><br></div><br><div class="wow fadeIn"><img src="res/img/graph/adorno.png" alt="" /></div>';

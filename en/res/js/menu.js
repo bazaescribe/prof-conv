@@ -21,10 +21,10 @@ function chText(option){
   var text = "";
 
   if(option == 1){
-    text = '<div class="wow fadeInRight"><span class="light" style="font-size:50px; font-weight: 400;">More than 35 years <br>of international experience</span><br></div><br><div class="wow fadeIn"><img src="../res/img/graph/adorno.png" alt="" /></div>';
+    text = '<div class="wow fadeInRight"><span class="light" style="font-size:50px; font-weight: 400;">With more than 36 years <br>of experience</span><br></div><br><div class="wow fadeIn"><img src="../res/img/graph/adorno.png" alt="" /></div>';
   }else{
     if (option == 2) {
-      text = '<div class="wow fadeInRight"><span class="light" style="font-size:50px; font-weight: 400;">We organize the best <br>events for your needings</span><br></div><br><div class="wow fadeIn"><img src="../res/img/graph/adorno.png" alt="" /></div>';
+      text = '<div class="wow fadeInRight"><span class="light" style="font-size:50px; font-weight: 400;">We care every detail for <br> conducting any kind of event.</span><br></div><br><div class="wow fadeIn"><img src="../res/img/graph/adorno.png" alt="" /></div>';
     }else {
       if (option == 3) {
         text = '<div class="wow fadeInRight"><span class="light" style="font-size:50px; font-weight: 400;">Business trips and events</span><br></div><br><div class="wow fadeIn"><img src="../res/img/graph/adorno.png" alt="" /></div>';

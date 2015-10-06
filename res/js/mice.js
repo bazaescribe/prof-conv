@@ -7,7 +7,7 @@ function showDetails(value){
     div.style.height = "0px";
     div.style.border = "0px solid white";
   }else{
-    div.style.height = "330px";
+    div.style.height = "340px";
     div.style.border = "1px solid #B9812B";
   }
 }

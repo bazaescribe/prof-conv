@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width" />
+    <meta name="theme-color" content="#D5A04F">
+
+    <title>Jobs - Proconvenciones</title>
+
+    <link rel="stylesheet" type="text/css" href="res/css/color.css">
+    <link rel="stylesheet" type="text/css" href="res/css/text.css">
+    <link rel="stylesheet" type="text/css" href="res/css/structure.css">
+    <link rel="stylesheet" type="text/css" href="res/css/elements.css">
+    <link rel="stylesheet" type="text/css" href="res/css/fotorama.css">
+
+    <link rel="stylesheet" type="text/css" href="res/css/animate.css">
+    <link rel="stylesheet" type="text/css" href="res/css/animconfig.css">
+    <link rel="stylesheet" href="res/font-awesome/css/font-awesome.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+    <script type="text/javascript" src="res/js/parallax.js"></script>
+    <script type="text/javascript" src="res/js/wow.js"></script>
+    <script type="text/javascript" src="res/js/fotorama.js"></script>
+
+    <script type="text/javascript" src="res/js/menu.js"></script>
+    <script type="text/javascript" src="res/js/mosaiq.js"></script>
+
+  </head>
+
+  <body onscroll="scrollChange()">
+
+    <div class="blind" style="display: none;" id="blind" onclick="showMenu(1)"></div>
+
+    <div class="side-menu" id="side-menu">
+      <ul>
+        <a href="home.html">
+          <li>Inicio</li>
+        </a>
+        <a href="nosotros.html">
+          <li>¿Quiénes Somos?</li>
+        </a>
+        <a href="servicios.html">
+          <li>Servicios</li>
+        </a>
+        <a href="mice.html">
+          <li>MICE</li>
+        </a>
+        <a href="produccion.html">
+          <li>Producción y creatividad</li>
+        </a>
+        <a href="travel.html">
+          <li>Luxury Travel</li>
+        </a>
+        <a href="sports.html">
+          <li>Deportes y entretenimiento</li>
+        </a>
+      </ul>
+    </div>
+
+    <div class="header center" style="font-size: 20px;" id="menuBar">
+      <div class="burger" id="burger-btn" onclick="showMenu(0)">
+        <div class="burger-button">
+          <i class="fa fa-bars fa-2x" id="burger-icon"></i>
+        </div>
+      </div>
+      <div class="burger" id="close-btn" onclick="showMenu(1)" style="display: none;">
+        <div class="burger-button">
+          <i class="fa fa-times fa-2x" id="close-icon"></i>
+        </div>
+      </div>
+      <div class="logo">
+        <div class="logo-item">
+          <a href="home.html">
+            <img src="../res/img/graph/logo.png" alt="" />
+          </a>
+        </div>
+      </div>
+      <div class="menu" id="main-menu" onmouseout="chText(0)">
+        <a href="nosotros.html" class="m-item" onmouseover="chText(1)">
+          About Us
+        </a>
+        <a href="servicios.html" class="m-item" onmouseover="chText(2)">
+          Services
+        </a>
+        <a href="mice.html" class="m-item" onmouseover="chText(3)">
+          MICE
+        </a>
+        <a href="produccion.html" class="m-item" onmouseover="chText(4)">
+          Production & <br>
+          Creativity
+        </a>
+        <a href="travel.html" class="m-item" onmouseover="chText(5)">
+          Luxury Travel <br>
+          Services
+        </a>
+        <a href="contacto.html" class="m-item" onmouseover="chText(6)">
+          Contact
+        </a>
+        <a href="../home.html" class="m-item" onmouseover="chText(7)">
+          SP
+        </a>
+      </div>
+    </div>
+
+    <div class="row pad-30 center reg-txt wow fadeIn">
+      <br><br><br><br>
+      <h4 class="mar-30">Labour Exchange</h4>
+
+      <div class="container center">
+        Would you like to be part of our professional team?
+        <br><br>
+        Write us or send us your  Resume to: <a href="mailto:someone@example.com?Subject=Hello%20again" target="_top">recursohumano@proconvenciones.com</a>
+        <br><br><br>
+        <img src="../res/img/photos/trabajo.jpg" alt="" />
+      </div>
+      <br><br>
+    </div>
+
+    <div class="footer">
+
+      <!--Sup footer-->
+      <div class="row pad-30 center white-txt neutral-40">
+        <div class="center">
+          <div class="cell left mar-30">
+            <span class="FooterTitle">Secciones</span>
+            <ul>
+              <a href="home.html">
+                <li>Home</li>
+              </a>
+              <a href="nosotros.html">
+                <li>About Us</li>
+              </a>
+              <a href="servicios.html">
+                <li>Services</li>
+              </a>
+              <a href="mice.html">
+                <li>MICE</li>
+              </a>
+              <a href="produccion.html">
+                <li>Production and Creativity</li>
+              </a>
+              <a href="travel.html">
+                <li>Luxury Travel Services</li>
+              </a>
+              <a href="contacto.html">
+                <li>Contact</li>
+              </a>
+              <a href="aviso.html">
+                <li>Privacy</li>
+              </a>
+              <a href="trabajo.html">
+                <li>Jobs</li>
+              </a>
+            </ul>
+          </div>
+
+          <div class="cell left mar-30">
+            <span class="FooterTitle">Ciudad de México</span>
+            <ul>
+              <li>
+              WTC México.<br>
+              Montecito No. 38, Piso 27, Ofic. 28.<br>
+              Col. Nápoles. <br>
+              México D.F.<br><br>
+              +52 (55) 9000.3400 <br>
+              mexico@proconvenciones.com
+              </li>
+            </ul>
+          </div>
+
+          <div class="cell left mar-30">
+            <span class="FooterTitle">Monterrey</span>
+            <ul>
+              <li>
+              Cintermex.
+              <br>
+              Fundidora 501 - 39. <br>
+              Col. Obrera.<br>
+              Monterrey, Nuevo León.<br><br>
+              +52 (81) 8369.6585 <br>
+              monterrey@proconvenciones.com
+              </li>
+            </ul>
+          </div>
+
+          <div class="cell left mar-30">
+            <span class="FooterTitle">Puebla</span>
+            <ul>
+              <li>
+                Torre Titanium.
+                <br>
+                1er. Retorno Osa Menor No.2, Piso 1.<br>
+                Col. Reserv. Territ. Atlixcáyotl.<br>
+                San Andrés Cholula, Puebla.<br><br>
+                +52 (222) 555.1800<br>
+                puebla@proconvenciones.com
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+
+      <!--Bot footer-->
+      <div class="row neutral-40 white-txt pad-30 center">
+        © 2015 Profesionales en Convenciones, Todos los Derechos Reservados.
+        <br>
+        Empresa autorizada en el contrato Marco de la S.F.P. para Organización Integral de Eventos.
+        <br><br>
+        <div class="cell social-icons">
+          <a href="https://www.facebook.com/Profesionales-en-Convenciones-384861465052372/timeline/" target="_blank" class="mar-10">
+            <i class="fa fa-facebook-square fa-2x"></i>
+          </a>
+          &nbsp;
+          <a href="https://twitter.com/ConvencionesPro" target="_blank" class="mar-10">
+            <i class="fa fa-twitter fa-2x"></i>
+          </a>
+          &nbsp;
+          <a href="https://www.youtube.com/channel/UC2Z6-rI2lq2tDZpbNp0fVsQ/videos" target="_blank" class="mar-10">
+            <i class="fa fa-youtube fa-2x"></i>
+          </a>
+          &nbsp;
+          <a href="https://mx.linkedin.com/pub/profesionales-en-convenciones/4a/385/91a" target="_blank" class="mar-10">
+            <i class="fa fa-linkedin fa-2x"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <script>
+     new WOW().init();
+    </script>
+
+  </body>
+</html>
